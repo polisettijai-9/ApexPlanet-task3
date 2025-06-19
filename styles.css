@@ -1,0 +1,142 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #1f1f1f;
+  border-bottom: 2px solid #333;
+}
+
+header h1 {
+  color: #00bcd4;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-style: italic;
+}
+
+.search-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+#searchBox {
+  padding: 10px;
+  width: 50%;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background: #222;
+  color: #fff;
+}
+
+.gallery {
+  padding: 2rem;
+}
+
+.animal-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+
+.animal-row img {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid #444;
+}
+
+.animal-row img:hover {
+  transform: scale(1.05);
+  border-color: #00bcd4;
+}
+
+.info-box {
+  background: #1e1e1e;
+  padding: 1rem 2rem;
+  margin: 2rem;
+  border-left: 4px solid #00bcd4;
+  border-radius: 6px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #222;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+  text-align: left;
+  color: #fff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.activities, .reviews, .map {
+  padding: 2rem;
+  background-color: #1a1a1a;
+  margin: 2rem 0;
+  border-top: 2px solid #333;
+}
+
+.activities ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.activities li {
+  margin-bottom: 10px;
+}
+
+.review {
+  background: #2a2a2a;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 3px solid #00bcd4;
+  border-radius: 6px;
+}
+
+.map-img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #aaa;
+}
