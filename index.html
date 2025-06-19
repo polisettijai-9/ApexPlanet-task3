@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoo Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Zoo Explorer</h1>
+    <p>Discover the amazing world of animals!</p>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchBox" placeholder="Search animals..." onkeyup="filterAnimals()">
+  </div>
+
+  <section class="gallery">
+    <!-- Land Animals -->
+    <h2>🦁 Land Animals</h2>
+    <div class="animal-row">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\lion.jpg" alt="Lion" data-name="lion" onclick="showInfo('lion')" width="160" height="160">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\elephant.jpg" alt="Elephant" data-name="elephant" onclick="showInfo('elephant')" width="160" height="160">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\tiger.jpg" alt="Tiger" data-name="tiger" onclick="showInfo('tiger')" width="160" height="160">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\zebra.jpg" alt="Zebra" data-name="zebra" onclick="showInfo('zebra')" width="160" height="160">
+    </div>
+
+    <!-- Water Animals -->
+    <h2>🌊 Water Animals</h2>
+    <div class="animal-row">
+      <img src="C:\Users\ASUS\Downloads\pexels-jeremy-bishop-1260133-2922672 (1).jpg" alt="Dolphin" data-name="dolphin" onclick="showInfo('dolphin')" width="160" height="160">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\hippo.jpg" alt="Hippo" data-name="hippo" onclick="showInfo('hippo')" width="160" height="160">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\seal.JPG" alt="Seal" data-name="seal" onclick="showInfo('seal')" width="160" height="160">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\crocodile.jpg" alt="Crocodile" data-name="crocodile" onclick="showInfo('crocodile')" width="160" height="160">
+    </div>
+
+    <!-- Birds -->
+    <h2>🕊️ Birds</h2>
+    <div class="animal-row">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\Penguin.jpg" alt="Penguin" data-name="penguin" onclick="showInfo('penguin')" width="160" height="160">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\peacock.webp" alt="Peacock" data-name="peacock" onclick="showInfo('peacock')" width="160" height="160">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\parrot.jpeg" alt="Parrot" data-name="parrot" onclick="showInfo('parrot')" width="160" height="160">
+      <img src="C:\Users\ASUS\OneDrive\Desktop\owl.jpg" alt="Owl" data-name="owl" onclick="showInfo('owl')" width="160" height="160">
+    </div>
+  </section>
+
+  <!-- Info Box -->
+  <section class="info-box">
+    <h3 id="animalName">Click an animal to learn more</h3>
+    <p id="animalDescription">Animal description will appear here...</p>
+  </section>
+
+  <!-- Modal for Habitat Info -->
+  <div class="modal" id="habitatModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <h3 id="habitatTitle">Habitat Info</h3>
+      <p><strong>Habitat:</strong> <span id="habitatPlace"></span></p>
+      <p><strong>Diet:</strong> <span id="habitatDiet"></span></p>
+      <p><strong>Did You Know?</strong> <span id="habitatFact"></span></p>
+    </div>
+  </div>
+
+  <!-- Zoo Activities -->
+  <section class="activities">
+    <h2>🎟️ Things to Do at the Zoo</h2>
+    <ul>
+      <li>🗺️ Explore different habitats like Savannah, Jungle, and Arctic zones.</li>
+      <li>📷 Take selfies with life-size animal cutouts at photo spots.</li>
+      <li>🦴 Join interactive feeding sessions with expert guides.</li>
+      <li>🎨 Participate in kids' art corners to draw your favorite animal.</li>
+      <li>📚 Visit the Wildlife Education Center to learn conservation facts.</li>
+    </ul>
+  </section>
+
+  <!-- Visitor Reviews -->
+  <section class="reviews">
+    <h2>📝 Visitor Reviews</h2>
+    <div class="review"><p><strong>Ravi:</strong> "A wonderful place to explore with kids! Loved the tiger exhibit!"</p></div>
+    <div class="review"><p><strong>Ananya:</strong> "The layout is amazing and the parrot show was fun! Highly recommend."</p></div>
+    <div class="review"><p><strong>Karthik:</strong> "Clean, informative, and exciting! We enjoyed the penguins the most."</p></div>
+  </section>
+
+  <!-- Mini Zoo Map -->
+  <section class="map">
+    <h2>🗺️ Mini Zoo Map</h2>
+    <img src="C:\Users\ASUS\OneDrive\Desktop\map.png" alt="Mini Zoo Map" class="map-img">
+    <p class="map-note">Explore key zones: Entry → Jungle Trail → Aviary → Reptile House → Marine Zone</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Zoo Explorer | Learn, Explore, Protect Wildlife</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
