@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zoo Explorer Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🐾 Welcome to Jungle Trails Zoo</h1>
+    <p>Explore animal zones, take a quiz & discover fun facts!</p>
+  </header>
+
+  <section id="zones">
+    <h2>🌍 Zoo Zones</h2>
+    <div class="zone-container">
+      <div class="zone">🦁 Land Animals</div>
+      <div class="zone">🐬 Water Creatures</div>
+      <div class="zone">🦜 Bird Paradise</div>
+    </div>
+  </section>
+
+  <section id="category">
+    <h2>🗂 Choose Quiz Category</h2>
+    <select id="category-select">
+      <option value="">-- Select a Category --</option>
+      <option value="land">🦁 Land Animals</option>
+      <option value="water">🐬 Water Creatures</option>
+      <option value="birds">🦜 Birds</option>
+    </select>
+    <button id="start-btn">Start Quiz</button>
+  </section>
+
+  <section id="quiz">
+    <h2>🎯 Zoo Quiz</h2>
+    <div id="question-container">
+      <p id="question">Please select a category to begin.</p>
+      <div id="options"></div>
+      <button id="next-btn" style="display:none;">Next</button>
+      <button id="restart-btn" style="display:none;">Restart Quiz</button>
+    </div>
+    <p id="score"></p>
+  </section>
+
+  <section id="api-data">
+    <h2>📡 Animal Facts Zone</h2>
+    <button onclick="loadFact()">Load API Fact</button>
+    <button onclick="showFunFact()">Show Zoo Fun Fact</button>
+    <p id="fact">Click the buttons to discover something new!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jungle Trails Zoo | Visit us for an unforgettable experience!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
